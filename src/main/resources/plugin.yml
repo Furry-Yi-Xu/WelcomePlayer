@@ -13,4 +13,4 @@ permissions:
     default: op
   welcomeplayer.token:
     description: 验证新玩家的token
-    default: op
+    default: player

@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 public class TokenCommand {
 
     public TokenCommand(CommandSender sender, String token) {
-        if (!PermissionCheck.checkPlayerWithPermission(sender, PermissionNodes.TOKEN)) {
+        if (!PermissionCheck.checkIsPlayer(sender)) {
             return;
         }
 

@@ -9,6 +9,6 @@ commands:
     reload-succeed: "&a配置已重新加载！"
 
 welcome:
-  not_exist_welcome: "&c这是一个过期的欢迎标语！"
+  not_exist_welcome: "&c这是一个不存在的标语！"
   already_used_welcome: "&c抱歉，你已经欢迎过这个玩家了！"
   welcome_succeed: "&a迎新奖已发放给您了！"

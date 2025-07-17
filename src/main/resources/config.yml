@@ -1,0 +1,14 @@
+join:
+  sound: "entity_player_levelup"
+  volume: 1
+  pitch: 1
+
+welcome:
+  click: "[&c&l点击此处&r]&6欢迎新玩家进入服务器！"
+  content:
+    - "&6欢迎新玩家 &a%player_name% &6进入服务器！"
+    - "&e新玩家 &a%player_name% &e你好，非常高兴见到你！"
+    - "&b欢迎新萌新 &a%player_name% &b来到服务器！"
+  action:
+    sender: "console"
+    command: "money give %player_name% 50"

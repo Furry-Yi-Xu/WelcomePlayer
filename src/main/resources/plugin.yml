@@ -1,0 +1,16 @@
+name: WelcomePlayer
+version: '1.0'
+main: com.yixu.WelcomePlayer
+api-version: '1.21'
+commands:
+  welcomeplayer:
+    description: 插件主命令
+    usage: /welcomeplayer <reload>
+
+permissions:
+  welcomeplayer.reload:
+    description: 重载所有配置
+    default: op
+  welcomeplayer.token:
+    description: 验证新玩家的token
+    default: op

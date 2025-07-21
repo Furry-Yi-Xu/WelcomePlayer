@@ -10,7 +10,7 @@ public class EventManager {
 
         PluginManager pluginManager = plugin.getServer().getPluginManager();
 
-        pluginManager.registerEvents(new PlayerJoin(), plugin);
+        pluginManager.registerEvents(new PlayerJoin(plugin), plugin);
 
     }
 

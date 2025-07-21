@@ -5,6 +5,7 @@ import com.yixu.Command.MainCommand.MainTabCompleter;
 import com.yixu.Config.ConfigManager;
 import com.yixu.Database.DatabaseManager;
 import com.yixu.Event.EventManager;
+import com.yixu.Util.Thread.ServerThreadUtils;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.FileNotFoundException;
@@ -34,6 +35,8 @@ public final class WelcomePlayer extends JavaPlugin {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+
+        ServerThreadUtils.init(this);
 
         getCommand("welcomeplayer").setExecutor(new CommandManager());
         getCommand("welcomeplayer").setTabCompleter(new MainTabCompleter());
